@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>రాజా సురేషోట్స్</title>
+
+    <!-- ============================================================== -->
+    <!-- 🎯 META PIXEL — ID: 2209816926106634                         -->
+    <!-- ============================================================== -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '2209816926106634');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2209816926106634&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- ============================================================== -->
+
+    <style>
+        /* ─── RESET & BASE ─── */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            
+            /* Exact clear HD background */
+            background-image: url('https://i.ibb.co/D354mDn/f31c2e3c2a8244905f8f325ebf26f35e.jpg');
+            background-size: 100% 100%; 
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #050509;
+            position: relative;
+        }
+
+        /* Light overlay so card is readable but background stays visible */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+            z-index: 0;
+        }
+
+        /* ─── CARD ─── */
+        .card {
+            width: 100%;
+            max-width: 480px;
+            background: #0e0e16; /* Solid dark card */
+            border-radius: 22px;
+            padding: 28px 22px 28px 22px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border: 1.5px solid rgba(255, 215, 0, 0.35);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 30, 30, 0.18);
+            overflow: hidden;
+        }
+
+        .card>* { position: relative; z-index: 1; }
+
+        /* ─── PROFILE IMAGE ─── */
+        .profile-wrap { display: flex; justify-content: center; margin-bottom: 14px; }
+        .profile-image { 
+            width: 115px; height: 115px; border-radius: 50%; object-fit: cover; 
+            border: 4px solid #ffd700; 
+            box-shadow: 0 0 0 3px #0e0e16, 0 0 0 5px #ff1e1e, 0 10px 30px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 215, 0, 0.35);
+            background: #0e0e16;
+        }
+
+        /* ─── CHANNEL NAME (Glowing Yellow) ─── */
+        .channel-name { display: block; font-size: 26px; font-weight: 900; letter-spacing: 1.4px; line-height: 1.3; margin-bottom: 12px; text-align: center; }
+        .channel-name .gold-text {
+            background: linear-gradient(90deg, #FFF2A8 0%, #FFD700 30%, #FFC107 50%, #FFD700 70%, #FFF2A8 100%);
+            background-size: 300% auto;
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+            animation: shimmer 3.5s ease-in-out infinite;
+            display: inline-block; font-weight: 900;
+            filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.95)) drop-shadow(0 0 28px rgba(255, 200, 0, 0.65));
+        }
+        @keyframes shimmer { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+        /* ─── VERIFIED BADGE ─── */
+        .verified-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border: 1.5px solid rgba(34, 197, 94, 0.55); border-radius: 30px; background: rgba(34, 197, 94, 0.12); font-size: 9px; font-weight: 800; color: rgba(255, 255, 255, 0.7); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 16px; }
+        .verified-badge .badge-text { color: #4ade80; text-shadow: 0 0 12px rgba(34, 197, 94, 0.7); font-weight: 800; }
+        .verified-badge .check { width: 11px; height: 11px; border-radius: 50%; background: #22c55e; display: flex; align-items: center; justify-content: center; }
+        .verified-badge .check svg { width: 7px; height: 7px; fill: #ffffff; }
+
+        /* ─── DESCRIPTION CARD ─── */
+        .desc-card { background: #14141c; border: 1.5px solid rgba(255, 215, 0, 0.35); border-radius: 14px; padding: 16px 14px; margin-bottom: 18px; text-align: center; }
+        .desc-card .desc-line { font-size: 13px; font-weight: 600; line-height: 1.9; }
+        .desc-card .em { background: linear-gradient(90deg, #FFD700, #F59E0B, #FFD700); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 900; }
+        .desc-card .blue { color: #60d5ff; font-weight: 800; }
+        .desc-card .green { color: #4ade80; font-weight: 800; }
+        .desc-card .pink { color: #ff8fc4; font-weight: 800; }
+        .desc-card .orange { color: #ffb366; font-weight: 800; }
+        .desc-card .white { color: #ffffff; font-weight: 700; }
+
+        /* ─── DIVIDER ─── */
+        .divider { width: 55px; height: 2px; background: linear-gradient(90deg, transparent, #ffd700, transparent); margin: 0 auto 18px auto; border-radius: 100%; }
+
+        /* ─── JOIN BUTTON ─── */
+        .btn-telegram {
+            display: inline-flex; align-items: center; justify-content: center; gap: 14px;
+            background: linear-gradient(135deg, #1e96d1 0%, #0a7cb5 45%, #065f8f 100%);
+            color: #ffffff; font-size: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 2.4px;
+            padding: 22px 42px; border-radius: 14px; text-decoration: none;
+            border: 2px solid rgba(186, 230, 253, 0.55);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75), 0 6px 16px rgba(2, 100, 165, 0.45), inset 0 2px 0 rgba(255, 255, 255, 0.35);
+            width: 100%; max-width: 400px; position: relative; overflow: hidden;
+        }
+        .btn-telegram i { font-size: 26px; }
+        .btn-telegram:hover { background: linear-gradient(135deg, #25a3e0 0%, #0d87c5 45%, #0770a5 100%); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 480px) {
+            body { padding: 12px; }
+            .card { padding: 24px 18px; border-radius: 20px; }
+            .profile-image { width: 96px; height: 96px; }
+            .channel-name { font-size: 21px; }
+            .desc-card .desc-line { font-size: 11.5px; }
+            .btn-telegram { font-size: 17px; padding: 20px 26px; letter-spacing: 1.8px; }
+            .btn-telegram i { font-size: 22px; }
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- ─── PROFILE IMAGE ─── -->
+        <div class="profile-wrap">
+            <img class="profile-image" src="https://i.ibb.co/bVbYM7G/IMG-20261020-003136-756.jpg" alt="రాజా సురేషోట్స్" />
+        </div>
+
+        <!-- ─── CHANNEL NAME ─── -->
+        <div class="channel-name">
+            <span class="gold-text">రాజా సురేషోట్స్</span>
+        </div>
+
+        <!-- ─── VERIFIED BADGE ─── -->
+        <div class="verified-badge">
+            <span class="check">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+            </span>
+            <span class="badge-text">VERIFIED COMMUNITY</span>
+        </div>
+
+        <!-- ─── DESCRIPTION CARD ─── -->
+        <div class="desc-card">
+            <div class="desc-line">
+                <span class="orange">🔥</span>
+                <span class="white">తెలుగు స్టేట్స్ లో బిగ్గెస్ట్</span>
+                <span class="em">నంబర్ ప్రిడిక్షన్ ఛానల్ మనది</span>
+                <span class="pink">💎</span><br />
+
+                <span class="blue">మీరు మన ఛానల్ లో రోజుకి వేళలో ప్రాఫిట్ చేయుచు</span><br />
+
+                <span class="green">మేము మీకు గైడెన్స్ ఇస్తాము</span><br />
+
+                <span class="white">జస్ట్ మనలని ఫాలో అవండి</span>
+                <span class="em">💯</span>
+                <span class="orange">🚀</span>
+            </div>
+        </div>
+
+        <!-- ─── DIVIDER ─── -->
+        <div class="divider"></div>
+
+        <!-- ─── JOIN BUTTON ─── -->
+        <a href="https://t.me/+m0a2V3yvy300MjE1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-telegram" 
+           id="joinBtn">
+            <i class="fab fa-telegram-plane"></i>
+            <span>JOIN TELEGRAM</span>
+        </a>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- BUTTON CLICK TRACKING ONLY (no auto redirect, no timer)      -->
+    <!-- ============================================================== -->
+    <script>
+        (function() {
+            'use strict';
+            
+            var joinBtn = document.getElementById('joinBtn');
+            var eventFired = false;
+
+            if (joinBtn) {
+                joinBtn.addEventListener('click', function(e) {
+                    // Fire Subscribe event exactly once
+                    if (!eventFired && typeof fbq !== 'undefined') {
+                        eventFired = true;
+                        
+                        var uniqueEventId = 'sub_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+                        
+                        fbq('track', 'Subscribe', {
+                            content_name: 'రాజా సురేషోట్స్',
+                            content_category: 'Telegram Channel'
+                        }, { eventID: uniqueEventId });
+                        
+                        console.log('✅ Subscribe fired once.');
+                    }
+                    
+                    // The browser will naturally follow the link to Telegram
+                });
+            }
+        })();
+    </script>
+    <!-- ============================================================== -->
+
+</body>
+</html>
